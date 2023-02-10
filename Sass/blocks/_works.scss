@@ -1,0 +1,101 @@
+.works {
+
+    &__left {
+        width: 492px;
+        height: 477px;
+        background-image: url(../../images/start-bg.png);
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        position: relative;
+        transform: translate(-50px);
+    }
+
+
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        width: 255px;
+        height: 225px;
+        padding: 50px 23px;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 100px rgba(87, 88, 89, 0.1);
+        border-radius: 10px;
+        position: absolute;
+
+        // &:hover {
+        //     background: #45B871;
+        // }
+
+        .card {
+
+            &__item {
+                width: 74px;
+                height: 74px;
+                background: #45B871;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                // &:hover {
+                //     background: #fff;
+                // }
+            }
+
+            &__sp {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 25px;
+                color: #FFFFFF;
+            }
+
+            &__text {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 15px;
+                color: #242323;
+            }
+        }
+    }
+
+    &__video {
+        display: flex;
+        align-items: center;
+        column-gap: 18px;
+    }
+
+    &__video-pouse {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background: #DDEEF2;
+        box-shadow: 0px 6.34375px 18.125px rgba(149, 205, 220, 0.2);
+        position: relative;
+
+        &::before {
+            content: url('../../images/pouse.svg');
+            width: 22px;
+            height: 22px;
+            top: 18px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+    }
+
+    &__sp {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        text-decoration-line: underline;
+        color: #242323;
+    }
+
+}
