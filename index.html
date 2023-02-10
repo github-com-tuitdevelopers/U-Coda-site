@@ -12,9 +12,23 @@
 
 <body>
     <!-- Header section -->
-    <header class="header">
+    <header class="header bg-[#E4F5EB]">
         <div class="container">
-            <div class="header__inner"></div>
+            <div class="header__inner flex justify-between items-center py-[50px]">
+                <img src="./images/icons/site-logo.svg" alt="Logo" class="site-logo">
+                <nav class="nav w-1/3">
+                    <ul class="nav-items flex items-center justify-between w-full">
+                        <li class="nav-item"><a href="./index.html" class="nav-item__link text-[#575859] text-[20px] leading-4 font-semibold ">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item__link text-[#575859] text-[20px] leading-4 font-medium">All cources</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item__link text-[#575859] text-[20px] leading-4 font-medium">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item__link text-[#575859] text-[20px] leading-4 font-medium">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header-extras">
+                    <a href="#" class="header-extra__sign text-[#575859] text-[20px] leading-4 font-semibold ">Sign in</a>
+                    <a href="#" class="header-extra__trial ml-10 px-[23px] py-[20px] bg-[#45B871] rounded-[5px] text-white text-[20px] leading-4 font-semibold">Free Trial</a>
+                </div>
+            </div>
         </div>
     </header>
     <!-- //Header section -->
@@ -22,9 +36,47 @@
     <!-- main section -->
     <main>
         <!-- hero section -->
-        <section class="hero">
+        <section class="hero bg-[#E4F5EB]">
             <div class="container">
-                <div class="hero__inner"></div>
+                <div class="hero__inner flex items-center justify-between pb-[78px]">
+                    <div class="hero-body  w-[626px]">
+                        <h1 class="hero-body__title text-[64px] font-bold leading-[83px] text-[#242323] mb-8">Anytime,anywhere Develop your skill by Online</h1>
+                        <p class="hero-body__subtitle text-[18px] font-semibold leading-[30px] text-[#6C6C6A] mb-12">Online education is a form of education where students use their home computers through the internet. For many nontraditional students, among them all those who want to continue.</p>
+                        <div class="hero-body__buttons flex items-center">
+                            <a href="#" class="hero-body__btn bg-[#45B871] rounded-[5px] py-[21px] px-12   text-white font-semibold text-xl">All Courses</a>
+                            <div class="hero-body__video flex justify-between items-center cursor-pointer">
+                                <img src="./images/icons/hero-video.svg" alt="Video" class="">
+                                <h5 class="hero-body__video-title">Play Video</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-image shrink-0 relative">
+                        <div class="hero-images relative">
+                            <img src="./images/hero-image.png" alt="Main image" class="">
+                        <img src="./images/icons/hero-image-back1.svg" alt="back-img" class="absolute -bottom-4 -right-5 ">
+                        <!-- <img src="./images/icons/hero-image-back2.svg" alt="back-img" class="absolute -bottom-4 -right-5 "> -->
+                        </div>
+                        <div class="hero-image__students absolute w-[300px] px-5 py-6 pt-[42px] bg-white top-[192px] -right-[146px] rounded-[3px]">
+                            <img src="./images/icons/hero-checklist.svg" alt="" class="absolute -top-[26px] right-[116px]">
+                            <div class="hero-image__students--body flex items-center  justify-around">
+                                <img src="./images/hero-list-img.jpg" alt="Students">
+                                <p class="hero-image__students--body-subtitle">15k Regular Happy Students</p>
+                            </div>
+                        </div>
+                        <div class="hero-image__exam flex items-center w-[300px] justify-around px-5 py-6 bg-white absolute top-[472px] -left-[54px] rounded-[3px]">
+                            <img src="./images/icons/hero-schedule.svg" alt="Schedule">
+                            
+                            <div class="hero-image__exam--body mt-[14px] pl-2">
+                                <h5 class="hero-image__exam--body-title font-semibold text-[18px] leading-[22px] text-[#575859]">Weekly Progress Exam</h5>
+                                <div class="hero-image__exam--body-subtitles flex items-center ">
+                                    <img src="./images/icons/hero-watch.svg" alt="Clock">
+                                    <p class="hero-image__exam--body-subtitle ml-2 font-normal text-[12px] leading-[15px] text-[#696969]">Time: 9.00 pm, Sunday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- // hero section -->
@@ -32,7 +84,16 @@
         <!-- students section -->
         <section class="students">
             <div class="container">
-                <div class="students__inner"></div>
+                <div class="students__inner py-[67px] flex items-center justify-between">
+                    <h2 class="students__title text-[35px] w-[336px] text-[#575859] leading-[50px] font-bold">Trusted by
+                        30,000+ satisfied students</h2>
+                    <div class="students__wrapper flex items-center justify-between gap-[69px]">
+                        <img src="./images/udemy.png" alt="udemy logo">
+                        <img src="./images/fiverr.png" alt="fiverr logo">
+                        <img src="./images/byjus.png" alt="byjus logo">
+                        <img src="./images/microsoft.png" alt="microsoft logo">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- // students section -->
@@ -40,15 +101,216 @@
         <!-- works section -->
         <section class="works">
             <div class="container">
-                <div class="works__inner"></div>
+                <div class="works__inner flex items-center justify-between gap-[252px] py-[165px]">
+                    <div class="works__left ">
+                        <div class="works__card card top-[72px] left-[66px]">
+                            <div class="card__item">
+                                <span class="card__sp">1</span>
+                            </div>
+                            <p class="card__text">Create Account</p>
+                        </div>
+                        <div class="works__card card top-[102px] left-[351px]">
+                            <div class="card__item">
+                                <span class="card__sp">2</span>
+                            </div>
+                            <p class="card__text">Find Courses</p>
+                        </div>
+                        <div class="works__card card top-[327px] left-[66px]">
+                            <div class="card__item">
+                                <span class="card__sp">3</span>
+                            </div>
+                            <p class="card__text">Book Seat</p>
+                        </div>
+                        <div class="works__card card top-[357px] left-[351px]">
+                            <div class="card__item">
+                                <span class="card__sp">4</span>
+                            </div>
+                            <p class="card__text">Get Started</p>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <h3 class="works__title text-[58px] w-[416px] text-[#242323] leading-[74px] font-bold">Get
+                            Started in 4 Easy Steps</h3>
+                        <p
+                            class="works__text text-[18px] w-[611px] text-[#8C8E91] leading-[30px] font-normal mt-[30px]">
+                            Proper and good education is very important for all of us. It facilitates
+                            quality learning all through the life among people of any age group, cast, creed, religion
+                            and region.
+                            <br><br>
+                            It is the process of achieving knowledge, values, skills, beliefs, and moral
+                            habits.Education is the process of facilitating learning, or the acquisiof knowledge,
+                            skills, values.
+                        </p>
+                        <div class="works__video mt-[50px]">
+                            <button class="works__video-pouse"></button>
+                            <span class="works__sp">See How it Works</span>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
         <!-- // works section -->
 
         <!-- courses section -->
-        <section class="courses">
+        <section class="courses bg-[#E4F5EB]">
             <div class="container">
-                <div class="courses__inner"></div>
+                <div class="courses__inner pt-[78px] pb-[106px]">
+                    <h2 class="courses__title text-[58px] text-[#242323] leading-[74px] font-bold">
+                        Our Popular Courses</h2>
+
+                    <div class="courses__col flex flex-col items-center">
+                        <div class="courses__wrapper mt-[134px]">
+                            <div class="courses__card card w-[450px]">
+                                <img class="rounded-t-[15px]" src="./images/happy-man.png" alt="happy-man img">
+                                <div class="card__inner">
+                                    <h4 class="card__title">Modern Business|Best Online Courses</h4>
+                                    <div class="card__wrapper">
+                                        <div class="card__item">
+                                            <p class="card__text">30 Lectures</p>
+                                        </div>
+                                        <div class="card__item">
+                                            <p class="card__text-sp">12k+Learners</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__teach">
+                                            <img src="./images/portrait-young-male.png" alt="portrait-young-male">
+                                            <div class="card__teach-name">
+                                                <h3 class="card__title-name">Jhon Smith</h3>
+                                                <a href="#" class="card__link">View Profile</a>
+                                            </div>
+                                        </div>
+                                        <span class="card__price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__card card w-[450px] translate-y-[-40px]">
+                                <img class="rounded-t-[15px]" src="./images/courses2.png" alt="happy-man img">
+                                <div class="card__inner">
+                                    <h4 class="card__title">Digital Marketing|How to Manage Market </h4>
+                                    <div class="card__wrapper">
+                                        <div class="card__item">
+                                            <p class="card__text">30 Lectures</p>
+                                        </div>
+                                        <div class="card__item">
+                                            <p class="card__text-sp">12k+Learners</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__teach">
+                                            <img src="./images/portrait-young-male.png" alt="portrait-young-male">
+                                            <div class="card__teach-name">
+                                                <h3 class="card__title-name">Kumaniya Martin</h3>
+                                                <a href="#" class="card__link">View Profile</a>
+                                            </div>
+                                        </div>
+                                        <span class="card__price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__card card w-[450px]">
+                                <img class="rounded-t-[15px]" src="./images/courses3.png" alt="happy-man img">
+                                <div class="card__inner">
+                                    <h4 class="card__title">Programing|Develope Your Programming Skill</h4>
+                                    <div class="card__wrapper">
+                                        <div class="card__item">
+                                            <p class="card__text">30 Lectures</p>
+                                        </div>
+                                        <div class="card__item">
+                                            <p class="card__text-sp">12k+Learners</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__teach">
+                                            <img src="./images/portrait-young-male.png" alt="portrait-young-male">
+                                            <div class="card__teach-name">
+                                                <h3 class="card__title-name">Jhon Smith</h3>
+                                                <a href="#" class="card__link">View Profile</a>
+                                            </div>
+                                        </div>
+                                        <span class="card__price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__card card w-[450px]">
+                                <img class="rounded-t-[15px]" src="./images/courses4.png" alt="happy-man img">
+                                <div class="card__inner">
+                                    <h4 class="card__title">Graphic Design|How to be
+                                        a professional Designer</h4>
+                                    <div class="card__wrapper">
+                                        <div class="card__item">
+                                            <p class="card__text">30 Lectures</p>
+                                        </div>
+                                        <div class="card__item">
+                                            <p class="card__text-sp">12k+Learners</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__teach">
+                                            <img src="./images/portrait-young-male.png" alt="portrait-young-male">
+                                            <div class="card__teach-name">
+                                                <h3 class="card__title-name">Jhon Smith</h3>
+                                                <a href="#" class="card__link">View Profile</a>
+                                            </div>
+                                        </div>
+                                        <span class="card__price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__card card w-[450px] translate-y-[-40px]">
+                                <img class="rounded-t-[15px]" src="./images/courses5.png" alt="happy-man img">
+                                <div class="card__inner">
+                                    <h4 class="card__title">LifeStyle|Easy to Capture all moments</h4>
+                                    <div class="card__wrapper">
+                                        <div class="card__item">
+                                            <p class="card__text">30 Lectures</p>
+                                        </div>
+                                        <div class="card__item">
+                                            <p class="card__text-sp">12k+Learners</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__teach">
+                                            <img src="./images/portrait-young-male.png" alt="portrait-young-male">
+                                            <div class="card__teach-name">
+                                                <h3 class="card__title-name">Jhon Smith</h3>
+                                                <a href="#" class="card__link">View Profile</a>
+                                            </div>
+                                        </div>
+                                        <span class="card__price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__card card w-[450px]">
+                                <img class="rounded-t-[15px]" src="./images/courses4.png" alt="happy-man img">
+                                <div class="card__inner">
+                                    <h4 class="card__title">Graphic Design|How to be
+                                        a professional Designer</h4>
+                                    <div class="card__wrapper">
+                                        <div class="card__item">
+                                            <p class="card__text">30 Lectures</p>
+                                        </div>
+                                        <div class="card__item">
+                                            <p class="card__text-sp">12k+Learners</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__teach">
+                                            <img src="./images/portrait-young-male.png" alt="portrait-young-male">
+                                            <div class="card__teach-name">
+                                                <h3 class="card__title-name">Jhon Smith</h3>
+                                                <a href="#" class="card__link">View Profile</a>
+                                            </div>
+                                        </div>
+                                        <span class="card__price ">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="courses__btn "> View All Courses</button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- // courses section -->

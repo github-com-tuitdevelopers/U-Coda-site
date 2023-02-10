@@ -1,0 +1,134 @@
+.courses {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 29px;
+    }
+
+    &__card {
+        height: 582px;
+        background: #FFFFFF;
+        border: 1px solid #F2EFEF;
+        box-shadow: 0px 20px 100px rgba(87, 88, 89, 0.1);
+        border-radius: 15px;
+
+        .card {
+            &__inner {
+                padding: 30px;
+            }
+
+            &__title {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 40px;
+                color: #242323;
+                
+            }
+
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 30px;
+                padding-bottom: 21px;
+                border-bottom: 1px solid rgba(38, 142, 170, 0.5);
+            }
+
+            &__text {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 15px;
+                color: #575859;
+                position: relative;
+                margin-left: 32px;
+
+                &::before {
+                    content: url(../../images/pouse-red.svg);
+                    position: absolute;
+                    top: -7px;
+                    left: -37px;
+                }
+            }
+
+            &__text-sp {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #575859;
+                position: relative;
+
+                &::before {
+                    content: url(../../images/teach.svg);
+                    position: absolute;
+                    top: 0px;
+                    left: -27px;
+                }
+            }
+
+            &__bottom {
+                margin-top: 22px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__teach {
+                display: flex;
+                justify-content: space-between;
+                column-gap: 20px;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    // position: relative;
+
+
+                    // &::after {
+                    //     content: '';
+                    //     position: absolute;
+                    //     width: 17px;
+                    //     height: 17px;
+                    //     background: red;
+                    //     top: 0;
+                    // }
+                }
+            }
+
+            &__title-name {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 21px;
+                color: #242323;
+            }
+
+            &__link {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 21px;
+                text-decoration: underline;
+                color: #2BDE6F;
+            }
+
+            &__price {
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 15px;
+                color: #4C68FF;
+            }
+
+        }
+    }
+
+    &__btn {
+        background: #45B871;
+        box-shadow: 0px 10px 80px rgba(9, 188, 77, 0.25);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 15px;color: #FFFFFF;
+        padding: 33px 44px;
+        margin-top: 58px;
+    }
+}
